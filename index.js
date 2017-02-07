@@ -7,6 +7,8 @@ const componentDefaultContent = componentName =>
   PropTypes,
 } from 'react';
 
+import styles from './${componentName}.scss';
+
 class ${componentName} extends Component {
   render() {
     return (
