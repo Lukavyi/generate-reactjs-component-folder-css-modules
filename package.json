@@ -1,0 +1,33 @@
+{
+  "name": "generate-reactjs-component-folder-css-modules",
+  "version": "1.0.0",
+  "description": "A script to generate index.js, Component.js, and Component.scss in Component folder.",
+  "main": "generateComponent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukavyi/generate-reactjs-component-folder-css-modules.git"
+  },
+  "keywords": [
+    "generate",
+    "react",
+    "reactjs",
+    "component",
+    "folder",
+    "css",
+    "modules",
+    "structure",
+    "create"
+  ],
+  "author": "Taras Lukavyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lukavyi/generate-reactjs-component-folder-css-modules/issues"
+  },
+  "homepage": "https://github.com/Lukavyi/generate-reactjs-component-folder-css-modules#readme",
+  "bin": {
+    "gcls": "./index.js"
+  }
+}
