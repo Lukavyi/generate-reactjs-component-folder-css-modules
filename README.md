@@ -17,7 +17,10 @@ yarn global generate-reactjs-component-folder-css-modules
 ```
 gcls ComponentName -> generates this folder structure:
 ```
-ComponentName
-  - ComponentName.js
-  - ComponentName.scss
-  - index.js
+
+```
+|ComponentName
+|-- ComponentName.js
+|-- ComponentName.scss
+|-- index.js
+```
