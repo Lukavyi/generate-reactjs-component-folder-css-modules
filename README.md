@@ -10,7 +10,7 @@ npm install -g generate-reactjs-component-folder-css-modules
 ```
 
 ```
-yarn global generate-reactjs-component-folder-css-modules
+yarn global add generate-reactjs-component-folder-css-modules
 ```
 
 ## Usage
