@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const components = process.argv.slice(2);
 
@@ -35,13 +37,13 @@ const createFile = (fileName, contents) => fs.writeFile(fileName, contents, err 
 
 components.forEach(component => {
   const componentName = component.charAt(0).toUpperCase() + component.slice(1);
-const folderPrefix = `${component}/`;
+  const folderPrefix = `${component}/`;
 
-fs.existsSync(componentName) || fs.mkdirSync(componentName);
+  fs.existsSync(componentName) || fs.mkdirSync(componentName);
 
-createFile(`${folderPrefix + componentName}.js`, componentDefaultContent(componentName));
-createFile(`${folderPrefix + componentName}.scss`, '');
-createFile(`${folderPrefix}index.js`, indexDefaultContent(componentName));
+  createFile(`${folderPrefix + componentName}.js`, componentDefaultContent(componentName));
+  createFile(`${folderPrefix + componentName}.scss`, '');
+  createFile(`${folderPrefix}index.js`, indexDefaultContent(componentName));
 
-console.log('Successfully created '+componentName+' component!');
+  console.log('Successfully created '+componentName+' component!');
 });
