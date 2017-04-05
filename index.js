@@ -4,10 +4,7 @@ const fs = require('fs');
 const components = process.argv.slice(2);
 
 const componentDefaultContent = componentName =>
-`import React, {
-  Component,
-  PropTypes,
-} from 'react';
+`import React, { Component } from 'react';
 
 import styles from './${componentName}.scss';
 
@@ -26,7 +23,6 @@ const indexDefaultContent = componentName =>
 `import ${componentName} from './${componentName}';
 
 export default ${componentName};
-
 `;
 
 const createFile = (fileName, contents) => fs.writeFile(fileName, contents, err => {
