@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/Lukavyi/generate-reactjs-component-folder-css-modules#readme",
   "bin": {
-    "gcls": "./index.js"
+    "comp": "./index.js"
   }
 }
