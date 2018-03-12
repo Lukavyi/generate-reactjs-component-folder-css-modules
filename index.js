@@ -20,9 +20,7 @@ export default ${componentName};
 `;
 
 const indexDefaultContent = componentName =>
-`import ${componentName} from './${componentName}';
-
-export default ${componentName};
+`export { default } from './${componentName}';
 `;
 
 const createFile = (fileName, contents) => fs.writeFile(fileName, contents, err => {
