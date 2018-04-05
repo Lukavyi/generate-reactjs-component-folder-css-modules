@@ -15,7 +15,7 @@ yarn global add generate-reactjs-component-folder-css-modules
 
 ## Usage
 ```
-gcls ComponentName -> generates this folder structure:
+comp ComponentName -> generates this folder structure:
 ```
 
 ```
